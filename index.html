@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sam's Grill House : Grillades turques à Genève</title>
+<meta name="description" content="Sam's Grill House, grillades turques à Genève. Viandes marinées, poulet, options végétariennes et desserts, entre la gare Cornavin et le lac. Rue du Mont-Blanc 16, 1201 Genève. Noté 4.7 sur 410 avis Google.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#menu" data-i18n="skip">Aller directement à la carte</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav" id="top">
+  <a class="wordmark" href="#top" aria-label="Sam's Grill House">
+    <span class="wordmark-main">Sam's Grill House</span>
+    <span class="wordmark-sub" data-i18n="wordmarkSub">Grillades turques · Genève</span>
+  </a>
+  <nav class="nav-links" aria-label="Navigation principale">
+    <a href="#signatures" data-i18n="navSig">Signatures</a>
+    <a href="#menu" data-i18n="navMenu">La carte</a>
+    <a href="#story" data-i18n="navStory">La maison</a>
+    <a href="#late" data-i18n="navLate">À emporter</a>
+    <a href="#visit" data-i18n="navVisit">Visite</a>
+  </nav>
+  <div class="nav-actions">
+    <div class="lang-toggle" role="group" aria-label="Language / Langue">
+      <button type="button" class="lang-btn is-active" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn btn-nav" href="tel:+41225548112">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>+41 22 554 81 12</span>
+    </a>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Sam's Grill House">
+  <div class="hero-media" aria-hidden="true">
+    <img class="hero-img" id="heroImg" src="assets/hero-grill.webp" alt="" width="2352" height="1008" fetchpriority="high">
+    <div class="hero-shade"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badges reveal">
+      <span class="badge badge-rating">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span data-i18n="badgeRating">4.7 · 410 avis Google</span>
+      </span>
+      <span class="badge badge-cuisine">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+        <span data-i18n="badgeCuisine">Cuisine turque, grillades</span>
+      </span>
+    </div>
+    <h1 class="hero-title">
+      <span class="line reveal" data-i18n="h1a">Grillades turques</span>
+      <span class="line reveal"><span data-i18n="h1b">à Genève</span><span class="title-dot">.</span></span>
+    </h1>
+    <p class="hero-rotate reveal" aria-live="off">
+      <span data-i18n="heroRotatePrefix">Le goût du grill :</span>
+      <span class="rotate-word" id="rotateWord">les viandes marinées</span>
+    </p>
+    <p class="hero-lede reveal" data-i18n="heroLede">À quelques minutes de la gare Cornavin, sur la Rue du Mont-Blanc, un grill turc comme on les aime : viandes marinées passées à la flamme, poulet, plats végétariens et desserts, sur place, en terrasse ou à emporter.</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="#menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+        <span data-i18n="ctaMenu">Voir la carte</span>
+      </a>
+      <a class="btn btn-ghost" href="tel:+41225548112">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+        <span data-i18n="ctaReserve">Réserver une table</span>
+      </a>
+      <a class="btn btn-ghost" href="tel:+41225548112">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span data-i18n="ctaCall">Appeler</span>
+      </a>
+    </div>
+    <p class="hero-note reveal" data-i18n="heroNote">Ouvert tard : jusqu'à minuit, et jusqu'à 2h du matin le vendredi et le samedi.</p>
+    <div class="hero-facts reveal">
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        Rue du Mont-Blanc 16, 1201 Genève
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span data-i18n="heroFactHours">Lun à jeu 7h à 0h, ven et sam 7h à 2h, dim 10h à 0h</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMBER DIVIDER ============ -->
+<div class="weave" aria-hidden="true">
+  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+</div>
+
+<!-- ============ SIGNATURES ============ -->
+<section class="section section-cream" id="signatures">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2 data-i18n="sigTitle">Ce qui sort du grill</h2>
+      <p class="section-sub" data-i18n="sigSub">Le cœur de la maison : le grill, la marinade et la flamme. Voici ce que la carte et les avis retiennent chez Sam's.</p>
+    </header>
+    <div class="sig-grid">
+      <article class="sig-card reveal">
+        <div class="sig-media"><img src="assets/skewers.webp" alt="Brochettes de viande marinée grillées, servies sur pain plat avec oignons grillés et herbes" width="1280" height="1920" loading="lazy"></div>
+        <div class="sig-body">
+          <div class="sig-tags"><span class="tag tag-grill" data-i18n="tagGrill">Le grill</span></div>
+          <h3 data-i18n="sig1Name">Brochettes marinées</h3>
+          <p data-i18n="sig1Desc">Le cœur de la maison : des viandes marinées, grillées jusqu'à la marque du feu. Les avis les décrivent juteuses et pleines de goût.</p>
+        </div>
+      </article>
+      <article class="sig-card reveal">
+        <div class="sig-media"><img src="assets/chicken.webp" alt="Poulet mariné grillé servi avec des champignons, dans une assiette sombre" width="1280" height="1920" loading="lazy"></div>
+        <div class="sig-body">
+          <div class="sig-tags"><span class="tag tag-fav" data-i18n="tagReviews">Cité dans les avis</span></div>
+          <h3 data-i18n="sig2Name">Poulet aux champignons</h3>
+          <p data-i18n="sig2Desc">L'association que les avis sur la maison retiennent nommément : le poulet, servi avec des champignons.</p>
+        </div>
+      </article>
+      <article class="sig-card reveal">
+        <div class="sig-media"><img src="assets/veggie.webp" alt="Assiette végétarienne au grill : légumes char grillés, fromage à griller, pains plats et sauces" width="1280" height="1920" loading="lazy"></div>
+        <div class="sig-body">
+          <div class="sig-tags"><span class="tag tag-veg" data-i18n="tagVeg">Végétarien</span></div>
+          <h3 data-i18n="sig3Name">Le grill végétarien</h3>
+          <p data-i18n="sig3Desc">La cuisine turque de la maison pense aussi aux végétariens : légumes et spécialités sans viande passent eux aussi à la flamme.</p>
+        </div>
+      </article>
+      <article class="sig-card reveal">
+        <div class="sig-media"><img src="assets/dessert.webp" alt="Dessert turc doré à la pistache, servi avec un verre de thé" width="1600" height="1600" loading="lazy"></div>
+        <div class="sig-body">
+          <div class="sig-tags"><span class="tag tag-sweet" data-i18n="tagSweet">Douceur</span></div>
+          <h3 data-i18n="sig4Name">Desserts</h3>
+          <p data-i18n="sig4Desc">La touche sucrée pour finir le repas : les desserts font partie de ce que les avis sur la maison retiennent.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="sig-more reveal">
+      <h3 data-i18n="sigMoreTitle">Et aussi, chez Sam's</h3>
+      <ul class="sig-list">
+        <li>
+          <div class="sig-list-item-top"><h4 data-i18n="sl1Name">Viandes marinées</h4><span class="tag tag-grill" data-i18n="tagGrill">Le grill</span></div>
+          <p data-i18n="sl1Desc">Marinées avant de passer au grill : c'est le goût fumé et la tendreté que les avis soulignent le plus.</p>
+        </li>
+        <li>
+          <div class="sig-list-item-top"><h4 data-i18n="sl2Name">Déjeuner et dîner</h4></div>
+          <p data-i18n="sl2Desc">Deux services, sept jours sur sept selon les horaires de la fiche Google : le midi comme le soir.</p>
+        </li>
+        <li>
+          <div class="sig-list-item-top"><h4 data-i18n="sl3Name">En terrasse ou à l'intérieur</h4></div>
+          <p data-i18n="sl3Desc">Deux façons de s'installer : la salle, ou les tables dehors, côté Rue du Mont-Blanc.</p>
+        </li>
+        <li>
+          <div class="sig-list-item-top"><h4 data-i18n="sl4Name">À emporter</h4></div>
+          <p data-i18n="sl4Desc">Tout le grill à emporter : un appel, et votre commande vous attend au comptoir.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="section section-char" id="menu">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2 data-i18n="menuTitle">La carte du grill</h2>
+      <p class="section-sub section-sub-light" data-i18n="menuSub">Une carte centrée sur le grill et la cuisine turque, midi et soir. Pour toute question sur les ingrédients, un appel suffit.</p>
+    </header>
+
+    <div class="menu-grid">
+      <div class="menu-col reveal">
+        <h3 class="menu-cat" data-i18n="catGrill">Du grill</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mMarinatedName">Viandes marinées grillées</h4><span class="tag tag-grill" data-i18n="tagGrill">Le grill</span></div>
+            <p data-i18n="mMarinated">Le cœur de la carte : des viandes marinées, grillées à la commande, que les avis décrivent juteuses et pleines de goût.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mSkewersName">Brochettes</h4></div>
+            <p data-i18n="mSkewers">En brochettes sur le grill, passées à la flamme dans la pure tradition des grillades turques.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mChickenName">Poulet aux champignons</h4><span class="tag tag-fav" data-i18n="tagReviews">Cité dans les avis</span></div>
+            <p data-i18n="mChicken">Le poulet de la maison, servi avec des champignons : l'assiette que les avis citent nommément.</p>
+          </li>
+        </ul>
+
+        <h3 class="menu-cat menu-cat-spaced" data-i18n="catVeg">Côté végétarien</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mVegGrillName">Grillades végétariennes</h4><span class="tag tag-veg" data-i18n="tagVeg">Végétarien</span></div>
+            <p data-i18n="mVegGrill">Légumes et spécialités végétariennes passés au grill, dans l'esprit de la cuisine turque.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mVegPlateName">Assiettes végétariennes</h4></div>
+            <p data-i18n="mVegPlate">Des assiettes complètes sans viande, fraîches et grillées, pour manger au grill sans compromis.</p>
+          </li>
+        </ul>
+        <div class="menu-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <p data-i18n="menuNote">Les prix et la carte détaillée seront ajoutés dès leur confirmation par la maison. En attendant, appelez-nous : nous vous dirons tout, y compris les plats du moment.</p>
+        </div>
+        <a class="btn btn-primary btn-block" href="tel:+41225548112">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span data-i18n="menuCta">Commander par téléphone</span>
+        </a>
+      </div>
+
+      <div class="menu-col reveal">
+        <h3 class="menu-cat" data-i18n="catSweet">Douceurs</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mDessertName">Desserts</h4><span class="tag tag-sweet" data-i18n="tagSweet">Douceur</span></div>
+            <p data-i18n="mDessert">La fin douce du repas : les desserts de la maison font partie des plaisirs que les avis retiennent.</p>
+          </li>
+        </ul>
+
+        <h3 class="menu-cat menu-cat-spaced" data-i18n="catService">Sur place &amp; à emporter</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mTakeName">À emporter</h4></div>
+            <p data-i18n="mTake">Commandez par téléphone et passez chercher votre grillade, chaude et prête, au 16 Rue du Mont-Blanc.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mResaName">Réservations</h4></div>
+            <p data-i18n="mResa">Une table pour le déjeuner ou le soir ? Les réservations se font simplement, par téléphone.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mTerraceName">Terrasse</h4></div>
+            <p data-i18n="mTerrace">Quand Genève le permet, installez-vous dehors : la terrasse donne sur la Rue du Mont-Blanc.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="section section-cream" id="story">
+  <div class="wrap story-grid">
+    <div class="story-card reveal">
+      <div class="story-media"><img src="assets/interior.webp" alt="Salle chaleureuse aux tables en bois et au grill ouvert, le soir" width="1920" height="1280" loading="lazy"></div>
+      <div class="weave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <dl class="fact-list">
+        <div class="fact-row"><dt data-i18n="factAddrLbl">Adresse</dt><dd>Rue du Mont-Blanc 16</dd></div>
+        <div class="fact-row"><dt data-i18n="factAreaLbl">Quartier</dt><dd data-i18n="factAreaVal">Pâquis, Cornavin</dd></div>
+        <div class="fact-row"><dt data-i18n="factRatingLbl">Note Google</dt><dd data-i18n="factRatingVal">4.7 · 410 avis</dd></div>
+        <div class="fact-row"><dt data-i18n="factServiceLbl">Service</dt><dd data-i18n="factServiceVal">Sur place, terrasse et à emporter</dd></div>
+      </dl>
+      <p class="story-card-note" data-i18n="storyCardNote">Un grill de quartier, entre la gare et le lac.</p>
+    </div>
+    <div class="story-copy">
+      <h2 class="reveal" data-i18n="storyTitle">Un grill turc entre la gare et le lac</h2>
+      <p class="reveal" data-i18n="storyP1">Sam's Grill House se trouve au 16 de la Rue du Mont-Blanc, la rue qui relie la gare Cornavin au lac. C'est l'adresse que les voyageurs comme les gens du quartier croisent tous les jours.</p>
+      <p class="reveal" data-i18n="storyP2">Ici, tout tourne autour du grill : une cuisine turque simple et directe, des viandes marinées, du poulet, des options végétariennes et des desserts pour finir.</p>
+      <p class="reveal" data-i18n="storyP3">Les avis retiennent l'accueil : une équipe chaleureuse, un patron dont on loue le sens du service, et une porte ouverte même à celles et ceux qui ne parlent pas français.</p>
+      <ul class="story-chips reveal">
+        <li data-i18n="chip1">Cuisine turque</li>
+        <li data-i18n="chip2">Viandes marinées</li>
+        <li data-i18n="chip3">Options végétariennes</li>
+        <li data-i18n="chip4">Ouvert tard le week-end</li>
+      </ul>
+      <div class="story-rating reveal">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <p><strong>4.7</strong> <span data-i18n="storyRating">étoiles sur 410 avis Google. Les avis soulignent les viandes marinées, l'accueil et l'emplacement, entre la gare et le lac.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<section class="section section-paper" id="trust">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2 data-i18n="trustTitle">Bon à savoir avant de venir</h2>
+    </header>
+    <div class="trust-grid">
+      <article class="trust-card reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3 data-i18n="trust1Title">Noté 4.7 étoiles</h3>
+        <p data-i18n="trust1Desc">410 avis Google pour cette adresse de la Rue du Mont-Blanc : une valeur sûre du quartier Cornavin.</p>
+      </article>
+      <article class="trust-card reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+        </div>
+        <h3 data-i18n="trust2Title">Végétarien aussi</h3>
+        <p data-i18n="trust2Desc">La cuisine turque de la maison prévoit de vraies options végétariennes, du grill comme du reste de la carte.</p>
+      </article>
+      <article class="trust-card reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <h3 data-i18n="trust3Title">Sur place, terrasse, à emporter</h3>
+        <p data-i18n="trust3Desc">Mangez dans la salle, dehors sur la Rue du Mont-Blanc, ou emportez votre grillade : les trois sont possibles.</p>
+      </article>
+      <article class="trust-card reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 data-i18n="trust4Title">Ouvert tard</h3>
+        <p data-i18n="trust4Desc">Jusqu'à minuit la plupart des soirs, et jusqu'à 2h le vendredi et le samedi, selon la fiche Google.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LATE & TAKEAWAY ============ -->
+<section class="section section-ember" id="late">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2 data-i18n="lateTitle">Le grill, même tard</h2>
+      <p class="section-sub section-sub-light" data-i18n="lateSub">À deux pas de Cornavin, Sam's sert au déjeuner comme au dîner, et le grill reste chaud tard le week-end.</p>
+    </header>
+    <div class="lunch-grid">
+      <article class="lunch-card reveal">
+        <h3 data-i18n="ccTitle">À emporter, sans attendre</h3>
+        <ol class="cc-steps">
+          <li>
+            <span class="cc-num">1</span>
+            <div><strong data-i18n="cc1Title">Choisissez</strong><p data-i18n="cc1Desc">Parcourez la carte ci-dessus et faites votre choix.</p></div>
+          </li>
+          <li>
+            <span class="cc-num">2</span>
+            <div><strong data-i18n="cc2Title">Appelez</strong><p data-i18n="cc2Desc">Un coup de fil, et le grill s'occupe de votre commande.</p></div>
+          </li>
+          <li>
+            <span class="cc-num">3</span>
+            <div><strong data-i18n="cc3Title">Passez chercher</strong><p data-i18n="cc3Desc">Votre commande vous attend au 16, Rue du Mont-Blanc.</p></div>
+          </li>
+        </ol>
+        <a class="btn btn-light" href="tel:+41225548112">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span data-i18n="ccCta">Appeler maintenant</span>
+        </a>
+      </article>
+      <article class="lunch-card reveal">
+        <h3 data-i18n="socTitle">Suivez la maison</h3>
+        <p data-i18n="socDesc">La maison vit sur Instagram et TikTok : grillades, coulisses du grill et actualités de la Rue du Mont-Blanc, c'est là que ça se passe. Et sur Facebook, pour les habitués du quartier.</p>
+        <div class="dl-actions">
+          <a class="btn btn-light" href="https://www.instagram.com/samsgrillhouse" target="_blank" rel="noopener"><span>Instagram @samsgrillhouse</span></a>
+          <a class="btn btn-outline-light" href="https://www.tiktok.com/@samsgrillhouse" target="_blank" rel="noopener"><span>TikTok @samsgrillhouse</span></a>
+          <a class="btn btn-outline-light" href="https://www.facebook.com/786849377844926" target="_blank" rel="noopener"><span>Facebook</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section class="section section-cream" id="visit">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2 data-i18n="visitTitle">Rue du Mont-Blanc, entre Cornavin et le lac</h2>
+    </header>
+    <div class="visit-grid">
+      <div class="visit-card reveal">
+        <h3 data-i18n="visitAddrTitle">Adresse et contact</h3>
+        <p class="visit-addr">Sam's Grill House<br>Rue du Mont-Blanc 16<br>1201 Genève</p>
+        <p class="visit-line"><span data-i18n="visitPhoneLabel">Téléphone :</span> <a href="tel:+41225548112">+41 22 554 81 12</a></p>
+        <div class="visit-actions">
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Rue%20du%20Mont-Blanc%2016%2C%201201%20Gen%C3%A8ve" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            <span data-i18n="visitDirections">Itinéraire</span>
+          </a>
+          <a class="btn btn-ghost-dark" href="https://www.instagram.com/samsgrillhouse" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <div class="social-row">
+          <a href="https://www.instagram.com/samsgrillhouse" target="_blank" rel="noopener" aria-label="Instagram Sam's Grill House">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@samsgrillhouse" target="_blank" rel="noopener" aria-label="TikTok Sam's Grill House">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            <span>TikTok</span>
+          </a>
+          <a href="https://www.facebook.com/786849377844926" target="_blank" rel="noopener" aria-label="Facebook Sam's Grill House">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+      <div class="visit-card reveal">
+        <h3 data-i18n="visitHoursTitle">Heures d'ouverture</h3>
+        <table class="hours-table">
+          <tbody>
+            <tr><th scope="row" data-i18n="dMonThu">Lundi à jeudi</th><td data-i18n="hMonThu">7h00 à 0h00</td></tr>
+            <tr><th scope="row" data-i18n="dFriSat">Vendredi et samedi</th><td data-i18n="hFriSat">7h00 à 2h00</td></tr>
+            <tr><th scope="row" data-i18n="dSun">Dimanche</th><td data-i18n="hSun">10h00 à 0h00</td></tr>
+          </tbody>
+        </table>
+        <p class="hours-note" data-i18n="hoursNote">Horaires selon la fiche Google de l'établissement. Sous réserve de modification.</p>
+        <p class="visit-service" data-i18n="visitService">Sur place, en terrasse ou à emporter. Paiement par carte accepté.</p>
+      </div>
+      <div class="visit-card reveal">
+        <h3 data-i18n="visitTravelTitle">Accès</h3>
+        <ul class="travel-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="13" rx="2"/><path d="M4 11h16"/><path d="M8 20l1.5-4M16 20l-1.5-4"/><circle cx="8.5" cy="13.5" r=".5"/><circle cx="15.5" cy="13.5" r=".5"/></svg>
+            <p><strong>Gare Cornavin</strong>, <span data-i18n="travelStation">la gare centrale est à quelques minutes à pied, parfait en arrivant à Genève ou avant un train.</span></p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M3 10h18"/><path d="M7 20l1-4M17 20l-1-4"/><path d="M7 6.5h.01M17 6.5h.01"/></svg>
+            <p><strong data-i18n="travelStopsLbl">Arrêts proches</strong>, <span data-i18n="travelStops">Mont-Blanc à 126 m, Alpes à 142 m et Chantepoulet à 175 m, selon la fiche de l'établissement.</span></p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M12 3v4"/><path d="M9 5.5 12 7l3-1.5"/></svg>
+            <p><strong data-i18n="travelLakeLbl">Le lac</strong>, <span data-i18n="travelLake">les quais et le Jet d'Eau sont au bout de la rue, côté lac Léman.</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-mark">Sam's Grill House</p>
+      <p class="footer-sub" data-i18n="footerSub">Grillades turques, Rue du Mont-Blanc 16, 1201 Genève</p>
+    </div>
+    <div class="footer-links">
+      <a href="tel:+41225548112">+41 22 554 81 12</a>
+      <a href="https://www.instagram.com/samsgrillhouse" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@samsgrillhouse" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.facebook.com/786849377844926" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Rue%20du%20Mont-Blanc%2016%2C%201201%20Gen%C3%A8ve" target="_blank" rel="noopener">Google Maps</a>
+      <a href="#top" data-i18n="footerTop">Haut de page</a>
+    </div>
+    <p class="footer-note" data-i18n="footerNote">Noté 4.7 étoiles sur 410 avis Google · Ouvert jusqu'à 2h le vendredi et le samedi</p>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE BAR ============ -->
+<nav class="mobile-bar" aria-label="Actions rapides">
+  <a href="tel:+41225548112">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span data-i18n="barCall">Appeler</span>
+  </a>
+  <a href="tel:+41225548112">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+    <span data-i18n="barReserve">Réserver</span>
+  </a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Rue%20du%20Mont-Blanc%2016%2C%201201%20Gen%C3%A8ve" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+    <span data-i18n="barDir">Itinéraire</span>
+  </a>
+  <a href="#menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+    <span data-i18n="barMenu">La carte</span>
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
